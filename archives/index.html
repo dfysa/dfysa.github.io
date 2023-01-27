@@ -195,7 +195,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Hello World","path":"2023/01/26/hello-world/"}]`)
+  const posts = JSON.parse(`[{"title":"Hello World","path":"2023/01/26/hello-world/"},{"title":"打造自己的UI样式库","path":"2023/01/27/打造自己的UI样式库/"},{"title":"IMOOC首页","path":"2023/01/27/IMOOC首页/"},{"title":"愚者，踏上旅程","path":"2023/01/27/愚者，踏上旅程/"},{"title":"读书 | 每个故事的开头都是一根骨头","path":"2023/01/27/每个故事开头都是一根骨头/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -239,7 +239,7 @@
     <div class="main-left--info">
       <img src="/imgs/avatar.jpg"" class="main-left--avatar" />
       <div class="main-left--intro">
-        <p class="main-left--name">dfysa</p>
+        <p class="main-left--name">彼曦</p>
         <div class="main-left--tags">
           <span class="main-left--tag">轻音乐</span>
           <span class="main-left--tag">熊猫</span>
@@ -329,7 +329,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>1 篇</span>
+        <span>5 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
@@ -364,6 +364,34 @@
                                             <div>
                                                 <a href="/2023/01/26/hello-world/">Hello World</a>
                                                 <span>01月26日</span>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="archive-list__post">
+                                            <div>
+                                                <a href="/2023/01/27/打造自己的UI样式库/">打造自己的UI样式库</a>
+                                                <span>01月27日</span>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="archive-list__post">
+                                            <div>
+                                                <a href="/2023/01/27/IMOOC首页/">IMOOC首页</a>
+                                                <span>01月27日</span>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="archive-list__post">
+                                            <div>
+                                                <a href="/2023/01/27/愚者，踏上旅程/">愚者，踏上旅程</a>
+                                                <span>01月27日</span>
+                                            </div>
+                                        </li>
+                                    
+                                        <li class="archive-list__post">
+                                            <div>
+                                                <a href="/2023/01/27/每个故事开头都是一根骨头/">读书 | 每个故事的开头都是一根骨头</a>
+                                                <span>01月27日</span>
                                             </div>
                                         </li>
                                     
@@ -426,7 +454,7 @@
   }
 
   setOperateItem()
-  const musics = JSON.parse(`[{"name":"面壁者","artist":"邓紫棋","url":"/music/面壁者.mp3","cover":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg1.doubanio.com%2Fview%2Fgroup_topic%2Fl%2Fpublic%2Fp441922947.jpg&refer=http%3A%2F%2Fimg1.doubanio.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1677337884&t=6811e23227d31d1b02d732e35032624a"}]`)
+  const musics = JSON.parse(`[{"name":"遺サレタ場所_遮光","artist":"MONACA (モナカ)","url":"/music/MONACA (モナカ) - 遺サレタ場所_遮光.mp3","cover":"https://img1.baidu.com/it/u=3491716987,878349831&fm=253&fmt=auto&app=138&f=JPEG?w=587&h=500"},{"name":"Town of Windmill (风车小镇)","artist":"a_hisa","url":"/music/a_hisa - Town of Windmill (风车小镇).mp3","cover":"https://img1.baidu.com/it/u=1397868331,3748479227&fm=253&fmt=auto&app=138&f=JPEG?w=299&h=300"},{"name":"面壁者","artist":"邓紫棋","url":"/music/面壁者.mp3","cover":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg1.doubanio.com%2Fview%2Fgroup_topic%2Fl%2Fpublic%2Fp441922947.jpg&refer=http%3A%2F%2Fimg1.doubanio.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1677395075&t=be67bd7f5b29e1e58cc3c32dba219365"}]`)
   const ap = new APlayer({
     container: document.querySelector('#aplayer'),
     audio: musics,
