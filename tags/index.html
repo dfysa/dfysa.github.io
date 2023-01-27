@@ -260,13 +260,13 @@
       <div class="main-left--statics">
         <a href="/categories">
           <div>
-            <span>0</span>
+            <span>1</span>
             <span>分类</span>
           </div>
         </a>
         <a href="/tags">
           <div>
-            <span>0</span>
+            <span>2</span>
             <span>标签</span>
           </div>
         </a>
@@ -352,7 +352,7 @@
   <div class="tags">
   <h2 class="tags-title">小站标签</h2>
   <div class="tags-list">
-    
+    <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/HTML5/" style="font-size: 10px;">HTML5</a>
   </div>
 </div>
 
@@ -364,7 +364,7 @@
       <i class="iconfont icon-gonggao"></i>
     </div>
     <div class="main-right--content">
-       
+      Welcome 
     </div>
   </div>
 
@@ -407,7 +407,7 @@
   }
 
   setOperateItem()
-  const musics = JSON.parse(`[{"name":"遺サレタ場所_遮光","artist":"MONACA (モナカ)","url":"/music/MONACA (モナカ) - 遺サレタ場所_遮光.mp3","cover":"https://img1.baidu.com/it/u=3491716987,878349831&fm=253&fmt=auto&app=138&f=JPEG?w=587&h=500"},{"name":"Town of Windmill (风车小镇)","artist":"a_hisa","url":"/music/a_hisa - Town of Windmill (风车小镇).mp3","cover":"https://img1.baidu.com/it/u=1397868331,3748479227&fm=253&fmt=auto&app=138&f=JPEG?w=299&h=300"},{"name":"面壁者","artist":"邓紫棋","url":"/music/面壁者.mp3","cover":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg1.doubanio.com%2Fview%2Fgroup_topic%2Fl%2Fpublic%2Fp441922947.jpg&refer=http%3A%2F%2Fimg1.doubanio.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1677395075&t=be67bd7f5b29e1e58cc3c32dba219365"}]`)
+  const musics = JSON.parse(`[{"name":"遺サレタ場所_遮光","artist":"MONACA (モナカ)","url":"/music/MONACA (モナカ) - 遺サレタ場所_遮光.mp3","cover":"https://img1.baidu.com/it/u=3491716987,878349831&fm=253&fmt=auto&app=138&f=JPEG?w=587&h=500"},{"name":"しわあわせ","artist":"Vanudy","url":"/music/しわあわせ.mp3","cover":"/imgs/%E8%87%B4%E4%B8%8D%E7%81%AD%E7%9A%84%E4%BD%A0.jpg"},{"name":"面壁者","artist":"邓紫棋","url":"/music/面壁者.mp3","cover":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg1.doubanio.com%2Fview%2Fgroup_topic%2Fl%2Fpublic%2Fp441922947.jpg&refer=http%3A%2F%2Fimg1.doubanio.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1677395075&t=be67bd7f5b29e1e58cc3c32dba219365"},{"name":"Town of Windmill (风车小镇)","artist":"a_hisa","url":"/music/a_hisa - Town of Windmill (风车小镇).mp3","cover":"https://img1.baidu.com/it/u=1397868331,3748479227&fm=253&fmt=auto&app=138&f=JPEG?w=299&h=300"}]`)
   const ap = new APlayer({
     container: document.querySelector('#aplayer'),
     audio: musics,
@@ -504,5 +504,5 @@
       // $('.main-container').fadeIn()
     })
   </script>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"live2d-widget-model-wanko"},"log":false});</script></body>
 </html>
