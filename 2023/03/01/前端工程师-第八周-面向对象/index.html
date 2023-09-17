@@ -400,36 +400,36 @@
       <h1 id="前端工程师第八周面向对象"><a href="#前端工程师第八周面向对象" class="headerlink" title="前端工程师第八周面向对象"></a>前端工程师第八周面向对象</h1><h2 id="认识对象"><a href="#认识对象" class="headerlink" title="认识对象"></a>认识对象</h2><h3 id="认识对象-1"><a href="#认识对象-1" class="headerlink" title="认识对象"></a>认识对象</h3><ul>
 <li>对象（object）是“键值对”的集合，表示属性和值的映射关系</li>
 </ul>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226183300051.png" alt="image-20230226183300051"></p>
+<p><img src="/imgs/typora/image-20230226183300051.png" alt="image-20230226183300051"></p>
 <h3 id="属性的访问"><a href="#属性的访问" class="headerlink" title="属性的访问"></a>属性的访问</h3><h3 id="对象的方法和遍历"><a href="#对象的方法和遍历" class="headerlink" title="对象的方法和遍历"></a>对象的方法和遍历</h3><p>- </p>
-<h2 id="认识函数的上下文"><a href="#认识函数的上下文" class="headerlink" title="认识函数的上下文"></a>认识函数的上下文</h2><h3 id="认识上下文"><a href="#认识上下文" class="headerlink" title="认识上下文"></a>认识上下文</h3><p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226185102494.png" alt="image-20230226185102494"></p>
+<h2 id="认识函数的上下文"><a href="#认识函数的上下文" class="headerlink" title="认识函数的上下文"></a>认识函数的上下文</h2><h3 id="认识上下文"><a href="#认识上下文" class="headerlink" title="认识上下文"></a>认识上下文</h3><p><img src="/imgs/typora/image-20230226185102494.png" alt="image-20230226185102494"></p>
 <h3 id="上下文规则"><a href="#上下文规则" class="headerlink" title="上下文规则"></a>上下文规则</h3><ul>
 <li>规则1：对象打点调用它的方法函数，则函数的上下文是这个打点的对象</li>
 </ul>
 <p>​                           对象.方法（）</p>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226185229213.png" alt="image-20230226185229213"></p>
+<p><img src="/imgs/typora/image-20230226185229213.png" alt="image-20230226185229213"></p>
 <ul>
 <li>规则2：圆括号直接调用函数，则函数的上下文是window对象</li>
 </ul>
 <p>​                                      函数（）</p>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226185348804.png" alt="image-20230226185348804"></p>
+<p><img src="/imgs/typora/image-20230226185348804.png" alt="image-20230226185348804"></p>
 <ul>
 <li>规则3:数组(类数组对象)枚举出函数法行适用,上下文是这个数诅(类数诅对象)<br>数组[ 下标 ] ()</li>
 </ul>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226185502672.png" alt="image-20230226185502672"></p>
+<p><img src="/imgs/typora/image-20230226185502672.png" alt="image-20230226185502672"></p>
 <ul>
 <li>规则4：IIFE中的函数，上下文是window对象</li>
 </ul>
 <p>​                         （  function（）{</p>
 <p>​                                }）（）;</p>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226190319251.png" alt="image-20230226190319251"></p>
+<p><img src="/imgs/typora/image-20230226190319251.png" alt="image-20230226190319251"></p>
 <ul>
 <li>规则5：定时器、延时器调用函数，上下文window对象</li>
 </ul>
 <p>​                        setInterval(函数，时间);</p>
 <p>​                        setTimeout(函数，时间);</p>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226190528091.png" alt="image-20230226190528091"></p>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226190518462.png" alt="image-20230226190518462"></p>
+<p><img src="/imgs/typora/image-20230226190528091.png" alt="image-20230226190528091"></p>
+<p><img src="/imgs/typora/image-20230226190518462.png" alt="image-20230226190518462"></p>
 <ul>
 <li>规则6:事件处理函数的上下文是绑定事件的DOM元素<br>DOM元素.onclick &#x3D; function () i<br> };</li>
 </ul>
@@ -445,20 +445,20 @@
 <li><p>两者能指定函数的上下文</p>
 <p>函数.call(上下文)</p>
 <p>函数.apply(上下文)</p>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226191709352.png" alt="image-20230226191709352"></p>
+<p><img src="/imgs/typora/image-20230226191709352.png" alt="image-20230226191709352"></p>
 </li>
 </ul>
-<h2 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h2><h3 id="上下文规则总结"><a href="#上下文规则总结" class="headerlink" title="上下文规则总结"></a>上下文规则总结</h3><p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226191753260.png" alt="image-20230226191753260"></p>
+<h2 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h2><h3 id="上下文规则总结"><a href="#上下文规则总结" class="headerlink" title="上下文规则总结"></a>上下文规则总结</h3><p><img src="/imgs/typora/image-20230226191753260.png" alt="image-20230226191753260"></p>
 <h3 id="用new操作符调用函数四步走"><a href="#用new操作符调用函数四步走" class="headerlink" title="用new操作符调用函数四步走"></a>用new操作符调用函数四步走</h3><ul>
 <li>一种函数调用方式：new 函数 （）</li>
 </ul>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226192957592.png" alt="image-20230226192957592"></p>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226193011253.png" alt="image-20230226193011253"></p>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226193056882.png" alt="image-20230226193056882"></p>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226193104877.png" alt="image-20230226193104877"></p>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226193113935.png" alt="image-20230226193113935"></p>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226193123313.png" alt="image-20230226193123313"></p>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226193357611.png" alt="image-20230226193357611"></p>
+<p><img src="/imgs/typora/image-20230226192957592.png" alt="image-20230226192957592"></p>
+<p><img src="/imgs/typora/image-20230226193011253.png" alt="image-20230226193011253"></p>
+<p><img src="/imgs/typora/image-20230226193056882.png" alt="image-20230226193056882"></p>
+<p><img src="/imgs/typora/image-20230226193104877.png" alt="image-20230226193104877"></p>
+<p><img src="/imgs/typora/image-20230226193113935.png" alt="image-20230226193113935"></p>
+<p><img src="/imgs/typora/image-20230226193123313.png" alt="image-20230226193123313"></p>
+<p><img src="/imgs/typora/image-20230226193357611.png" alt="image-20230226193357611"></p>
 <h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>何为构造函数？</p>
 <ul>
 <li><p>用new调用一个函数，这个函数就被称为“构造函数”,任何函数都可以是构造函数，只需要用new调用它</p>
@@ -475,19 +475,19 @@
 <h3 id="类与实例"><a href="#类与实例" class="headerlink" title="类与实例"></a>类与实例</h3><ul>
 <li>举例：类是蓝图，而实例是成品、是具体的对象</li>
 <li>比如：狗是类，那么哈士奇就是实例</li>
-<li><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226213907341.png" alt="image-20230226213907341"></li>
-<li><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230226213914412.png" alt="image-20230226213914412"></li>
+<li><img src="/imgs/typora/image-20230226213907341.png" alt="image-20230226213907341"></li>
+<li><img src="/imgs/typora/image-20230226213914412.png" alt="image-20230226213914412"></li>
 </ul>
 <h2 id="原型和原型链"><a href="#原型和原型链" class="headerlink" title="原型和原型链"></a>原型和原型链</h2><h3 id="prototype和原型链查找"><a href="#prototype和原型链查找" class="headerlink" title="prototype和原型链查找"></a>prototype和原型链查找</h3><ul>
 <li>任何函数都有prototype属性</li>
 <li>prototype属性值是个对象，它默认拥有constructor属性指回函数</li>
 </ul>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230227181607398.png" alt="image-20230227181607398"></p>
+<p><img src="/imgs/typora/image-20230227181607398.png" alt="image-20230227181607398"></p>
 <ul>
 <li>普通函数来说的prototype属性没有任何用处，而构造函数的prototype属性非常有用</li>
 <li>构造函数的prototype属性是它的实例的原型</li>
 </ul>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230227181720322.png" alt="image-20230227181720322"></p>
+<p><img src="/imgs/typora/image-20230227181720322.png" alt="image-20230227181720322"></p>
 <ul>
 <li>JavaScript规定:实例可以打点访问它的原型的属性和方法，这被称为”原型链查找”</li>
 </ul>
@@ -512,8 +512,8 @@
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function <span class="title function_">People</span><span class="params">( name, age, sex)</span> &#123;</span><br><span class="line"><span class="built_in">this</span>.name = name;</span><br><span class="line"><span class="built_in">this</span>.age = age;</span><br><span class="line"><span class="built_in">this</span>.sex = sex;</span><br><span class="line">&#125;</span><br><span class="line">People.prototype.sayHello = function () &#123;</span><br><span class="line">console.log(<span class="string">&#x27;我是&#x27;</span>+ <span class="built_in">this</span>.name) ;</span><br><span class="line">&#125;;</span><br><span class="line">People.prototype.sleep = function ( &#123;</span><br><span class="line">console.log(<span class="built_in">this</span>.name +<span class="string">&quot;开始睡觉，zzzz&quot;</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h3 id="原型链的终点"><a href="#原型链的终点" class="headerlink" title="原型链的终点"></a>原型链的终点</h3><p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230227182555697.png" alt="image-20230227182555697"></p>
-<h3 id="-1"><a href="#-1" class="headerlink" title=""></a></h3><p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230227182604904.png" alt="image-20230227182604904"></p>
+<h3 id="原型链的终点"><a href="#原型链的终点" class="headerlink" title="原型链的终点"></a>原型链的终点</h3><p><img src="/imgs/typora/image-20230227182555697.png" alt="image-20230227182555697"></p>
+<h3 id="-1"><a href="#-1" class="headerlink" title=""></a></h3><p><img src="/imgs/typora/image-20230227182604904.png" alt="image-20230227182604904"></p>
 <h2 id="上升到面向对象"><a href="#上升到面向对象" class="headerlink" title="上升到面向对象"></a>上升到面向对象</h2><ul>
 <li>面向对象的本质：定义不同的类，让类的实例工作</li>
 <li>优点：程序编写更清晰，代码结构更严密，使代码更健康更利于维护、</li>
@@ -527,7 +527,7 @@
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a =<span class="keyword">new</span> <span class="title class_">Number</span>(<span class="number">123</span>);</span><br><span class="line"><span class="keyword">var</span> b = <span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&#x27;荼课网&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> c =<span class="keyword">new</span> <span class="title class_">Boolean</span> (<span class="literal">true</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230227183735285.png" alt="image-20230227183735285"></p>
+<p><img src="/imgs/typora/image-20230227183735285.png" alt="image-20230227183735285"></p>
 <p>总结</p>
 <ul>
 <li>Number(). String()和Boolean()的实例都是object类型，它们的PrimitiveValue属性存储它们的本身值</li>
@@ -689,7 +689,7 @@
 <td>Book、Magazine</td>
 </tr>
 </tbody></table>
-<h3 id="通过原型链实现继承"><a href="#通过原型链实现继承" class="headerlink" title="通过原型链实现继承"></a>通过原型链实现继承</h3><p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230227192121911.png" alt="image-20230227192121911"></p>
+<h3 id="通过原型链实现继承"><a href="#通过原型链实现继承" class="headerlink" title="通过原型链实现继承"></a>通过原型链实现继承</h3><p><img src="/imgs/typora/image-20230227192121911.png" alt="image-20230227192121911"></p>
 <ul>
 <li>问题1:如果父类的属性中有引用类型值，则这个属性会被所有子类的实例共享;</li>
 <li>问题2:子类的构造函数中，往往需要重复定义很多超类定义过的属性。即，子类的构造函数写的不够优雅;</li>
@@ -706,7 +706,7 @@
 <h3 id="原型式继承"><a href="#原型式继承" class="headerlink" title="原型式继承"></a>原型式继承</h3><ul>
 <li>IE9+开始支持object.create()方法，可以根据指定的对象为原型创建出新对象<br>var obj2 &#x3D; object.create(obj1);</li>
 </ul>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230227192419553.png" alt="image-20230227192419553"></p>
+<p><img src="/imgs/typora/image-20230227192419553.png" alt="image-20230227192419553"></p>
 <ul>
 <li>在没有必要“兴师动众”地创建构造函数，而只是想让新对象与现有对象“类似”的情况下，使用object.create()即可胜任，称为原型式继承</li>
 </ul>
@@ -720,17 +720,17 @@
 <li>寄生组合式继承:通过借用构造函数来继承属性，通过原型链的混成形式来继承方法</li>
 <li>其背后的基本思路是:不必为了指定子类型的原型而调用超类型的构造函数，我们所需要的无非就是超类型原型的一个副本而已。本质上，就是使用寄生式继承来继承超类型的原型，然后再将结果指定给子类型的原型。</li>
 </ul>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230227192701937.png" alt="image-20230227192701937"></p>
+<p><img src="/imgs/typora/image-20230227192701937.png" alt="image-20230227192701937"></p>
 <h3 id="instanceof-运算符"><a href="#instanceof-运算符" class="headerlink" title="instanceof 运算符"></a>instanceof 运算符</h3><ul>
 <li>instanceof运算符用来检测“某对象是不是某个类的实例”，比如:<br>xiaoming instanceof Student</li>
 <li>底层机理:检查Student.prototype属性是否在xiaoming的原型链上(多少层都行，只要在就行)</li>
 </ul>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230227192800183.png" alt="image-20230227192800183"></p>
+<p><img src="/imgs/typora/image-20230227192800183.png" alt="image-20230227192800183"></p>
 <h3 id="内置构造函数"><a href="#内置构造函数" class="headerlink" title="内置构造函数"></a>内置构造函数</h3><ul>
 <li>JavaScript有很多内置构造函数，比如Array就是数组类型的构造函数，Function就是函数类型的构造函数，object就是对象类型的构造函数</li>
 <li>内置构造函数非常有用，所有该类型的方法都是定义在它的内置构造函数的prototype上的，我们可以给这个对象添加新的方法，从而拓展某类型的功能</li>
 </ul>
-<p><img src="C:\Users\fly\AppData\Roaming\Typora\typora-user-images\image-20230227192904477.png" alt="image-20230227192904477"></p>
+<p><img src="/imgs/typora/image-20230227192904477.png" alt="image-20230227192904477"></p>
 <ul>
 <li>Number、String、Boolean是三个基本类型值的包装类，用new调用它们可以生成“对象”版本的基本类型值</li>
 </ul>
