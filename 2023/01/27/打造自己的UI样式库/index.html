@@ -195,7 +195,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Hello World","path":"2023/01/26/hello-world/"},{"title":"打造自己的UI样式库","path":"2023/01/27/打造自己的UI样式库/"},{"title":"IMOOC首页","path":"2023/01/27/IMOOC首页/"},{"title":"愚者，踏上旅程","path":"2023/01/27/愚者，踏上旅程/"},{"title":"读书 | 每个故事的开头都是一根骨头","path":"2023/01/27/每个故事开头都是一根骨头/"},{"title":"前端工程师 第八周 面向对象","path":"2023/03/01/前端工程师-第八周-面向对象/"}]`)
+  const posts = JSON.parse(`[{"title":"Hello World","path":"2023/01/26/hello-world/"},{"title":"打造自己的UI样式库","cover":"/imgs/bg03.jpg","path":"2023/01/27/打造自己的UI样式库/"},{"title":"IMOOC首页","cover":"/imgs/bg05.jpg","path":"2023/01/27/IMOOC首页/"},{"title":"愚者，踏上旅程","cover":"/imgs/bg04.jpg","path":"2023/01/27/愚者，踏上旅程/"},{"title":"读书 | 每个故事的开头都是一根骨头","cover":"/imgs/bg01.jpg","path":"2023/01/27/每个故事开头都是一根骨头/"},{"title":"前端工程师 第八周 面向对象","cover":"/imgs/bg02.jpg","path":"2023/03/01/前端工程师-第八周-面向对象/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -266,7 +266,7 @@
         </a>
         <a href="/tags">
           <div>
-            <span>2</span>
+            <span>3</span>
             <span>标签</span>
           </div>
         </a>
@@ -393,7 +393,7 @@
                 
                   <p class="article-info--date">日期：2023-01-27 14:15:49</p>
         </div>
-        <img src="/imgs/default-cover.webp" alt="" class="article-cover">
+        <img src="/imgs/bg03.jpg" alt="" class="article-cover">
       </div>
     </div>
     <article class="article-content">
